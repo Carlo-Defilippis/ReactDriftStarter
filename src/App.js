@@ -7,7 +7,7 @@ function App() {
   const handlePageChange = () => {
     setCount(count + 1)
     console.log("Page changed " + count + " times.")
-    window.drift.page();
+    window.drift.page("Page-changed-" + count);
   }
   return (
     <div className="App">
